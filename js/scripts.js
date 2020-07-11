@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 
   // smooth scrolling
-  $(".cf a").on("click", function (event) {
+  $(".menu li a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
 
@@ -17,9 +17,9 @@ $(document).ready(function () {
 
       $("html,body").animate(
         {
-          scrollTop: $(hash).offset().top,
+          scrollTop: $(hash).offset().top - 60,
         },
-        800,
+        1000,
         function () {
           window.location.hash = hash;
         }

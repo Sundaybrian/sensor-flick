@@ -10,7 +10,9 @@ body {
 /* --------------- navigation----------------- */
 
 header {
-  background: yellowgreen;
+  background: transparent;
+  width: 100%;
+  position: relative;
 }
 
 header.sticky {
@@ -32,7 +34,6 @@ header .logo img {
 
 .nav-wrapper {
   max-width: 1200px;
-  background: #000;
   margin: 0 auto;
   position: relative;
   padding: 7px 0;
@@ -60,6 +61,15 @@ nav.nav-wrapper ul li a {
 
 nav.nav-wrapper ul li a:hover {
   border-bottom: 1px solid #fff !important;
+}
+
+.cover-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
 }
 
 /* -------------------------------------------- */
