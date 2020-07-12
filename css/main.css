@@ -24,25 +24,98 @@ header.sticky {
   transition: 0.3s;
 }
 
+header .menu-icon {
+  position: absolute;
+  top: 15px;
+  right: 24px;
+  font-size: 30px;
+  color: cyan;
+  cursor: pointer;
+  z-index: 10;
+}
+
+header .menu-container {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+header .menu-content {
+  /* display: inline-block; */
+  /* padding: 0 10px; */
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  position: relative;
+  list-style: none;
+}
+
+header .menu-content li a {
+  font-size: 17px;
+  padding: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  color: cyan;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+}
+
+header .menu-content li a:hover {
+  background-color: #1b998b;
+}
+
+header .menu-container .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 30px;
+  color: cyan;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
 body.scroll header.sticky {
   transform: translateY(0);
+}
+
+body.menu-is-active .menu-container {
+  height: 100%;
+}
+
+body.menu-is-active .menu-icon {
+  display: none;
+}
+
+body.menu-is-active .close-btn {
+  display: block;
 }
 
 header .logo img {
   max-width: 100px;
 }
 
-.nav-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding: 7px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .logo {
+  top: 25%;
+  position: absolute;
+  left: 50vw;
+  top: 15px;
+  right: 24px;
+  font-size: 30px;
+  color: cyan;
+  cursor: pointer;
 }
 
-nav ul li {
+/* nav ul li {
   display: inline-block;
   padding: 0 10px;
   margin-bottom: 0;
@@ -57,11 +130,11 @@ nav.nav-wrapper ul li a {
   color: white;
   padding-bottom: 3px;
   transition: 0.3s;
-}
+} */
 
-nav.nav-wrapper ul li a:hover {
+/* nav.nav-wrapper ul li a:hover {
   border-bottom: 1px solid #fff !important;
-}
+} */
 
 .cover-main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -75,7 +148,7 @@ nav.nav-wrapper ul li a:hover {
 /* -----------------Responsive menu--------------------------- */
 
 @media only screen and (max-width: 768px) {
-  .menu-trigger {
+  /* .menu-trigger {
     width: 35px;
     height: 35px;
     display: block;
@@ -155,5 +228,5 @@ nav.nav-wrapper ul li a:hover {
 
   body.menu-is-active .menu-trigger {
     display: none;
-  }
+  } */
 }

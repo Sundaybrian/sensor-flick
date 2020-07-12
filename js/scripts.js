@@ -10,23 +10,35 @@ $(document).ready(function () {
 
   // responsive menu
   var body = $("body");
-  var menuTrigger = $(".js-menu-trigger");
-  var mainOverlay = $(".js-main-overlay");
+  // var menuTrigger = $(".js-menu-trigger");
 
-  menuTrigger.on("click", function () {
+  var menuIcon = $(".js-menu-icon");
+  var closeBtn = $(".js-close-btn");
+
+  // var mainOverlay = $(".js-main-overlay");
+
+  menuIcon.on("click", function () {
     body.addClass("menu-is-active");
   });
 
-  mainOverlay.on("click", function () {
+  // menuTrigger.on("click", function () {
+  //   body.addClass("menu-is-active");
+  // });
+
+  closeBtn.on("click", function () {
     body.removeClass("menu-is-active");
   });
 
-  $(".menu li a").on("click", function () {
+  // mainOverlay.on("click", function () {
+  //   body.removeClass("menu-is-active");
+  // });
+
+  $(".menu-content li a").on("click", function () {
     $("body").removeClass("menu-is-active");
   });
 
   // smooth scrolling
-  $(".menu li a").on("click", function (event) {
+  $(".menu-content li a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
 
