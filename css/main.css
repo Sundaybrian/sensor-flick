@@ -81,11 +81,12 @@ nav.nav-wrapper ul li a:hover {
     display: block;
     z-index: 10;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 15px;
     background: url("../img/noun_hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    color: cyan;
   }
 
   .main-overlay {
@@ -94,7 +95,7 @@ nav.nav-wrapper ul li a:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 5;
+    z-index: 6;
     background-color: rgba(0, 0, 0, 0.72);
     display: none;
   }
@@ -109,7 +110,7 @@ nav.nav-wrapper ul li a:hover {
     content: "";
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 20px;
     z-index: 20;
   }
 
