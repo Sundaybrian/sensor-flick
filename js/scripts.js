@@ -55,4 +55,20 @@ $(document).ready(function () {
       );
     }
   });
+
+  // isotope
+  let $btns = $(".directors .button-group button");
+
+  $btns.on("click", function (e) {
+    $(".directors .button-group button").removeClass("active");
+
+    e.target.classList.add("active");
+
+    let $selector = $(e.target).attr("data-filter");
+
+    $(".directors .grid").isotope({
+      filter: $selector,
+    });
+    return false;
+  });
 });

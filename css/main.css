@@ -7,6 +7,13 @@ body {
   font-family: sans-serif;
 }
 
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
 /* --------------- navigation----------------- */
 
 header {
@@ -144,6 +151,32 @@ nav.nav-wrapper ul li a {
   height: 100vh;
   background-position: center;
 }
+
+/* ===================ABout======================== */
+/* ===================ABout======================== */
+
+/* =================== Directors======================== */
+
+section.directors {
+  padding: 4rem 0;
+}
+
+section.directors .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px san-serif;
+  text-transform: uppercase;
+}
+
+section.directors .button-group button + button {
+  padding-left: 3rem;
+}
+
+section .directors .grid .our-project > .title h4 {
+  font-family: normal 700 24px/12px;
+}
+/* =================== 
+Directors======================== */
 
 /* -----------------Responsive menu--------------------------- */
 
