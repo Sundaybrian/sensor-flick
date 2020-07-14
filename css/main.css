@@ -153,6 +153,13 @@ nav.nav-wrapper ul li a {
 }
 
 /* ===================ABout======================== */
+.about {
+  background-image: url("../img/about.jpg");
+  background-size: cover;
+  background-repeat: none;
+  /* background-attachment: fixed; */
+  height: 90vh;
+}
 /* ===================ABout======================== */
 
 /* =================== Directors======================== */
@@ -177,6 +184,45 @@ section .directors .grid .our-project > .title h4 {
 }
 /* =================== 
 Directors======================== */
+
+/* =================== 
+contact area======================== */
+
+@keyframes animate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.social {
+  margin-top: 2vh;
+}
+
+.social a {
+  cursor: pointer;
+  padding: 0px 20px;
+  display: inline-block;
+  animation: animate 2s 1;
+  text-decoration: none;
+}
+
+i.fa {
+  font-size: 38px;
+  color: #951c49;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+i.fa:hover {
+  color: rgba(0, 212, 255, 1);
+  transform: scale(1.2);
+}
+
+/* =================== 
+contact area======================== */
 
 /* -----------------Responsive menu--------------------------- */
 
