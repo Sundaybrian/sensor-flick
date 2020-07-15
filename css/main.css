@@ -178,15 +178,17 @@ header .logo {
 }
 
 .work-tile > span {
-  bottom: 0;
   position: absolute;
+  top: 50%;
+  right: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background: red;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
   color: #fff;
-  opacity: 0.8;
+  /* opacity: 0.9; */
+  /* filter: brightness(2); */
 }
 /* ===================showcase======================== */
 
