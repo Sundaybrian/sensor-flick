@@ -126,20 +126,6 @@ header .logo {
   cursor: pointer;
 }
 
-/* nav ul li {
-  display: inline-block;
-  padding: 0 10px;
-  margin-bottom: 0;
-}
-
-nav.nav-wrapper ul li a {
- 
-} */
-
-/* nav.nav-wrapper ul li a:hover {
-  border-bottom: 1px solid #fff !important;
-} */
-
 .cover-main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/hero.jpg");
@@ -151,11 +137,29 @@ nav.nav-wrapper ul li a {
 
 /* ===================ABout======================== */
 .about {
-  background-image: url("../img/about.jpg");
+  padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../img/about.jpg");
   background-size: cover;
+  background-position: center center;
   background-repeat: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
   /* background-attachment: fixed; */
   height: 90vh;
+}
+
+.about .about-footer {
+  margin: 90px auto 0 auto;
+  font-weight: 500;
+  align-self: flex-end;
+
+  text-align: center;
 }
 /* ===================ABout======================== */
 
