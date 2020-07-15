@@ -3,6 +3,11 @@
   outline: none;
 }
 
+:root {
+  --brand-color: #00acee;
+  --nav-overlay-bg: #f0f0f0;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -36,7 +41,7 @@ header .menu-icon {
   top: 15px;
   right: 24px;
   font-size: 30px;
-  color: cyan;
+  color: var(--brand-color);
   cursor: pointer;
   z-index: 10;
 }
@@ -48,7 +53,7 @@ header .menu-container {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--nav-overlay-bg);
   overflow: hidden;
   transition: 1s ease-in-out;
 }
@@ -65,19 +70,17 @@ header .menu-content {
 }
 
 header .menu-content li a {
+  color: var(--brand-color);
   font-size: 17px;
   padding: 16px;
   line-height: 22px;
   text-decoration: none;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
-  color: cyan;
-  transition: 0.3s ease-in-out;
   display: inline-block;
-}
-
-header .menu-content li a:hover {
-  background-color: #1b998b;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 header .menu-container .close-btn {
@@ -85,7 +88,7 @@ header .menu-container .close-btn {
   top: 25px;
   right: 30px;
   font-size: 30px;
-  color: cyan;
+  color: var(--brand-color);
   z-index: 2;
   cursor: pointer;
   display: none;
@@ -109,6 +112,7 @@ body.menu-is-active .close-btn {
 
 header .logo img {
   max-width: 100px;
+  /* z-index: 5; */
 }
 
 header .logo {
@@ -118,7 +122,7 @@ header .logo {
   top: 15px;
   right: 24px;
   font-size: 30px;
-  color: cyan;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -129,14 +133,7 @@ header .logo {
 }
 
 nav.nav-wrapper ul li a {
-  font-size: 17px;
-  line-height: 22px;
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
-  color: white;
-  padding-bottom: 3px;
-  transition: 0.3s;
+ 
 } */
 
 /* nav.nav-wrapper ul li a:hover {
@@ -168,25 +165,45 @@ section.directors {
   padding: 4rem 0;
 }
 
+section.directors .header-directors {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/YTbanner.jpg");
+  background-size: cover;
+  background-repeat: none;
+  color: #fff;
+  /* background-attachment: fixed; */
+  height: 90vh;
+}
+
 section.directors .button-group button {
   background: transparent;
   border: none;
   font: normal 500 16px/130px san-serif;
   text-transform: uppercase;
+  color: #fff !important;
 }
 
 section.directors .button-group button + button {
   padding-left: 3rem;
 }
 
-section .directors .grid .our-project > .title h4 {
+section.directors .grid .our-project > .title h4 {
   font-family: normal 700 24px/12px;
 }
+
+section.directors .grid .our-project > div.img:hover {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
 /* =================== 
 Directors======================== */
 
 /* =================== 
 contact area======================== */
+
+section.contact {
+  padding: 5rem 0;
+}
 
 @keyframes animate {
   0% {
@@ -198,6 +215,7 @@ contact area======================== */
 }
 
 .social {
+  text-align: center;
   margin-top: 2vh;
 }
 
@@ -209,14 +227,15 @@ contact area======================== */
   text-decoration: none;
 }
 
-i.fa {
-  font-size: 38px;
+.social i.fa {
+  font-size: 30px;
+  padding: 2rem;
   color: #951c49;
   transform: scale(0.9);
   transition: 0.3s;
 }
 
-i.fa:hover {
+.social i.fa:hover {
   color: rgba(0, 212, 255, 1);
   transform: scale(1.2);
 }
