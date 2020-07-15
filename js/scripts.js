@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  // TODO: CLEAN UP THIS FILE
+  //hacky way to filter tabs displayon load
+  $(".tabs-display .tabs-grid").isotope({
+    filter: ".music-tabs",
+  });
+
   // sticky header
   var $header = $("header");
   var $sticky = $header.before($header.clone().addClass("sticky"));
@@ -29,10 +35,6 @@ $(document).ready(function () {
     body.removeClass("menu-is-active");
   });
 
-  // mainOverlay.on("click", function () {
-  //   body.removeClass("menu-is-active");
-  // });
-
   $(".menu-content li a").on("click", function () {
     $("body").removeClass("menu-is-active");
   });
@@ -56,7 +58,24 @@ $(document).ready(function () {
     }
   });
 
+  //isotope tabs
   // isotope
+  let $tabs = $(".tabs-display .button-group button");
+
+  $tabs.on("click", function (e) {
+    $(".tabs-display .button-group button").removeClass("active");
+
+    e.target.classList.add("active");
+
+    let $selector = $(e.target).attr("data-filter");
+
+    $(".tabs-display .tabs-grid").isotope({
+      filter: $selector,
+    });
+    return false;
+  });
+
+  // isotope directors
   let $btns = $(".directors .button-group button");
 
   $btns.on("click", function (e) {
