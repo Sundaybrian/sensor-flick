@@ -208,7 +208,7 @@ section.tabs-display .tabs-buttons > .button-group {
 }
 
 section.tabs-display .tabs-buttons > .button-group button {
-  color: #fff;
+  color: var(--brand-color);
   background: transparent;
   border: none;
   font: normal 500 san-serif;
