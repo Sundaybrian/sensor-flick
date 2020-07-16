@@ -69,6 +69,18 @@ $(document).ready(function () {
 
     let $selector = $(e.target).attr("data-filter");
 
+    // check data filter and switch background
+    if ($selector == ".music-tabs") {
+      $(".tabs-display").css({
+        background:
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(img/music2-kijito.JPG)",
+      });
+    } else if ($selector == ".events-tabs") {
+      $(".tabs-display").css("background-image", "url(img/thumbnail.jpg)");
+    } else {
+      $(".tabs-display").css("background-image", "url(img/advert1.png)");
+    }
+
     $(".tabs-display .tabs-grid").isotope({
       filter: $selector,
     });
