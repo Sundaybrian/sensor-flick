@@ -192,6 +192,38 @@ header .logo {
 }
 /* ===================showcase======================== */
 
+/* =================== tabs ======================== */
+
+section.tabs-display .tabs-buttons {
+  margin-top: 30px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.tabs-display .tabs-buttons > .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.tabs-display .tabs-buttons > .button-group button {
+  color: #fff;
+  background: transparent;
+  border: none;
+  font: normal 500 san-serif;
+  text-transform: uppercase;
+}
+
+section.tabs-display .tabs-buttons > .button-group button.active {
+  color: var(--brand-color);
+}
+
+section.tabs-display .button-group button + button {
+  margin-left: 3rem;
+}
+/* =================== tabs ======================== */
+
 /* =================== Directors======================== */
 
 section.directors {
