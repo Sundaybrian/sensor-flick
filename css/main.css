@@ -196,8 +196,8 @@ header .logo {
 section.tabs-display {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../img/music2-kijito.JPG");
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,13 +233,24 @@ section.tabs-display .button-group button + button {
   margin-left: 3rem;
 }
 
+section.tabs-display .tabs-grid {
+  position: relative;
+}
+
 .adverts-tabs {
-  max-width: 640px;
-  margin: 0 auto;
+  /* max-width: 640px;
+  margin: 0 auto; */
+  /* position: relative; */
+  margin: auto;
+  width: 50%;
   /* box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
   transform: scale(0.8);
   transition: all 0.3s ease-in; */
 }
+
+.owl-carousel {
+}
+
 /* =================== tabs ======================== */
 
 /* =================== Directors======================== */
