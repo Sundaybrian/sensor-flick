@@ -6,6 +6,7 @@
 :root {
   --brand-color: #00acee;
   --nav-overlay-bg: #f0f0f0;
+  --main-color: #951c49;
 }
 
 body {
@@ -343,6 +344,7 @@ section.contact {
 section.contact .contact-cols {
   background-color: var(--brand-color);
   min-height: 360px;
+  min-width: 240px;
   border-radius: 9px;
 }
 
@@ -380,6 +382,15 @@ section.contact .contact-cols {
   }
 }
 
+.socials-row h6 {
+  color: var(--brand-color);
+}
+
+.socials-row hr.border {
+  background-color: var(--brand-color);
+  margin: 0 auto;
+  width: 50%;
+}
 .social {
   text-align: center;
   margin-top: 2vh;
@@ -396,7 +407,7 @@ section.contact .contact-cols {
 .social i.fa {
   font-size: 30px;
   padding: 2rem;
-  color: #951c49;
+  color: var(--brand-color);
   transform: scale(0.9);
   transition: 0.3s;
 }
