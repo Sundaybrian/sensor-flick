@@ -267,6 +267,7 @@ section.tabs-display .tabs-grid h5 {
 
 /* =================== Directors======================== */
 section.directors {
+  background-color: #393939;
 }
 
 section.directors .header-directors {
