@@ -336,7 +336,39 @@ Directors======================== */
 contact area======================== */
 
 section.contact {
-  padding: 5rem 0;
+  padding: 120px 0;
+  background-color: var(--nav-overlay-bg);
+}
+
+section.contact .contact-cols {
+  background-color: var(--brand-color);
+  min-height: 360px;
+  border-radius: 9px;
+}
+
+.contact-cols h5 {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.contact-cols ul {
+  position: absolute;
+  bottom: 30%;
+  list-style: none;
+}
+
+.contact-cols ul li,
+.contact-cols ul li a {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-cols ul li {
+  line-height: 32px;
 }
 
 @keyframes animate {
