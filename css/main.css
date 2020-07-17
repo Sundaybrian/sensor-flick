@@ -237,6 +237,22 @@ section.tabs-display .tabs-grid {
   position: relative;
 }
 
+section.tabs-display .tabs-grid .labels {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+section.tabs-display .tabs-grid h5 {
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tabs-grid h5 span {
+}
+
 .adverts-tabs {
   /* max-width: 640px;
   margin: 0 auto; */
