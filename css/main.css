@@ -201,7 +201,6 @@ section.tabs-display {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
 }
 
 section.tabs-display .tabs-buttons {
@@ -264,33 +263,46 @@ section.tabs-display .tabs-grid h5 {
   transition: all 0.3s ease-in; */
 }
 
-.owl-carousel {
-}
-
 /* =================== tabs ======================== */
 
 /* =================== Directors======================== */
-
 section.directors {
-  padding: 4rem 0;
 }
 
 section.directors .header-directors {
+  padding-top: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/YTbanner.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: none;
   color: #fff;
   /* background-attachment: fixed; */
-  height: 90vh;
+}
+
+section.directors .tabs-buttons {
+  margin-top: 30px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.directors .tabs-buttons > .button-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 section.directors .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/130px san-serif;
-  text-transform: uppercase;
-  color: #fff !important;
+  font: normal 500 1rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+section.directors .button-group button.active {
+  color: var(--brand-color);
 }
 
 section.directors .button-group button + button {
