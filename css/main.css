@@ -249,9 +249,6 @@ section.tabs-display .tabs-grid h5 {
   font-weight: bold;
 }
 
-.tabs-grid h5 span {
-}
-
 .adverts-tabs {
   /* max-width: 640px;
   margin: 0 auto; */
@@ -268,10 +265,11 @@ section.tabs-display .tabs-grid h5 {
 /* =================== Directors======================== */
 section.directors {
   background-color: #393939;
+  padding-bottom: 60px;
 }
 
 section.directors .header-directors {
-  padding-top: 90vh;
+  padding-top: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/YTbanner.jpg");
   background-size: cover;
@@ -316,6 +314,19 @@ section.directors .grid .our-project > .title h4 {
 
 section.directors .grid .our-project > div.img:hover {
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+section.directors .directors-projects .title {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section.directors .directors-projects .title h5,
+.title span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* =================== 
