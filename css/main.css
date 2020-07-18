@@ -243,7 +243,7 @@ header .logo {
 
 /* =================== tabs ======================== */
 section.tabs-display {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/music2-kijito.JPG");
   padding-top: 200px;
   padding-bottom: 200px;
@@ -269,8 +269,10 @@ section.tabs-display .tabs-buttons > .button-group button {
   color: #fff;
   background: transparent;
   border: none;
-  font: normal 500 san-serif;
+  font: san-serif;
+  font-weight: 600;
   text-transform: uppercase;
+  font-size: 15px;
 }
 
 section.tabs-display .tabs-buttons > .button-group button.active {
@@ -299,11 +301,13 @@ section.tabs-display .tabs-grid h5 {
 }
 
 .adverts-tabs {
+  position: absolute;
+  left: 25% !important;
   /* max-width: 640px;
   margin: 0 auto; */
   /* position: relative; */
-  margin: auto;
-  width: 50%;
+  /* margin: auto !important; */
+  width: 50% !important;
   /* box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
   transform: scale(0.8);
   transition: all 0.3s ease-in; */

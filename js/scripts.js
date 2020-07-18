@@ -73,7 +73,7 @@ $(document).ready(function () {
     if ($selector == ".music-tabs") {
       $(".tabs-display").css({
         background:
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(img/music2-kijito.JPG)",
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/music2-kijito.JPG)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -81,7 +81,7 @@ $(document).ready(function () {
     } else if ($selector == ".events-tabs") {
       $(".tabs-display").css({
         background:
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url(img/MWG07934.jpg)",
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/MWG07934.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -89,7 +89,7 @@ $(document).ready(function () {
     } else {
       $(".tabs-display").css({
         background:
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url(img/advert1.jpg)",
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/advert1.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
