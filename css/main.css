@@ -13,6 +13,13 @@ body {
   font-family: sans-serif;
 }
 
+.offset:before {
+  display: block;
+  content: "";
+  height: 72px;
+  /* margin-top: -4rem; */
+}
+
 button:focus,
 button:active button:hover .btn:active,
 .btn.active {
@@ -23,9 +30,13 @@ button:active button:hover .btn:active,
 /* --------------- navigation----------------- */
 
 header {
-  background: transparent;
   width: 100%;
   position: relative;
+  z-index: 1;
+}
+
+header > nav.navbar.navbar-light.bg-light {
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 header.sticky {
@@ -56,7 +67,7 @@ header .menu-container {
   z-index: 1;
   background: var(--nav-overlay-bg);
   overflow: hidden;
-  transition: 1s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 header .menu-content {
@@ -82,6 +93,14 @@ header .menu-content li a {
   padding-bottom: 3px;
   transition: 0.3s ease-in-out;
   font-weight: bold;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+header .menu-content li a:hover {
+  transform: scale(1.1);
+  color: teal;
+  cursor: pointer;
 }
 
 header .menu-container .close-btn {
@@ -128,7 +147,7 @@ header .logo {
 }
 
 .cover-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -139,27 +158,36 @@ header .logo {
 /* ===================ABout======================== */
 .about {
   padding-top: 15vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/about.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: none;
   color: #fff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   /* background-attachment: fixed; */
-  height: 90vh;
+  height: 98vh;
+}
+
+.about .scream {
+  width: 50%;
+  margin: auto;
+  font-size: 90px;
+  text-transform: capitalize;
+  z-index: -1;
+  position: absolute;
 }
 
 .about .about-footer {
   margin: 90px auto 0 auto;
   font-weight: 500;
   align-self: flex-end;
-
   text-align: center;
 }
 /* ===================ABout======================== */
@@ -384,12 +412,15 @@ section.contact .contact-cols {
 
 .socials-row h6 {
   color: var(--brand-color);
+  margin-bottom: 1.9rem;
 }
 
-.socials-row hr.border {
+.socials-row div.underline {
   background-color: var(--brand-color);
-  margin: 0 auto;
-  width: 50%;
+  margin: 0 auto 2rem;
+  width: 3rem;
+  height: 0.2rem;
+  background: var(--brand-color);
 }
 .social {
   text-align: center;
@@ -419,89 +450,3 @@ section.contact .contact-cols {
 
 /* =================== 
 contact area======================== */
-
-/* -----------------Responsive menu--------------------------- */
-
-@media only screen and (max-width: 768px) {
-  /* .menu-trigger {
-    width: 35px;
-    height: 35px;
-    display: block;
-    z-index: 10;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    background: url("../img/noun_hamburger.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: cyan;
-  }
-
-  .main-overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 6;
-    background-color: rgba(0, 0, 0, 0.72);
-    display: none;
-  }
-
-  .main-overlay:after {
-    background: url("../img/noun_Close.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
-    display: block;
-    content: "";
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    z-index: 20;
-  }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: #131313;
-    width: 100%;
-    max-width: 300px;
-    z-index: 30;
-    transform: translate3d(-100%, 0, 0);
-    transition: 0.3s;
-  }
-
-  nav.nav-wrapper ul li {
-    display: block;
-    margin-top: 20px;
-    padding: 0;
-    padding-bottom: 20px;
-  }
-
-  nav.nav-wrapper ul li a {
-    font-size: 18px;
-    line-height: 23px;
-  }
-
-  nav.nav-wrapper ul li a:hover {
-    border: transparent;
-  }
-
-  body.menu-is-active .menu {
-    transform: translate3d(0, 0, 0);
-    display: block;
-    padding: 0 15px;
-  }
-
-  body.menu-is-active .main-overlay {
-    display: block;
-  }
-
-  body.menu-is-active .menu-trigger {
-    display: none;
-  } */
-}
