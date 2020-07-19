@@ -465,11 +465,14 @@ section.contact .contact-cols {
   animation: animate 2s 1;
   text-decoration: none;
   text-transform: capitalize;
+  font-size: 20px;
+  padding-left: 1px;
+  color: var(--brand-color) !important;
 }
 
 .social i.fa {
-  font-size: 30px;
-  padding: 2rem;
+  font-size: 24px;
+  padding: 0.8rem;
   color: var(--brand-color);
   transform: scale(0.9);
   transition: 0.3s;

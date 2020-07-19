@@ -77,6 +77,33 @@
     padding-left: 0.1rem;
     padding-bottom: 0.9rem;
   }
+  /* ==============  contact card ===================== */
+  section.contact {
+    padding: 120px 10px;
+    background-color: var(--nav-overlay-bg);
+  }
+
+  section.contact .contact-cols {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+  .contact-cols.contact-right ul {
+    text-align: left;
+    left: 0%;
+  }
+  /* ================ contact card end ====================== */
+}
+
+@media only screen and (min-width: 360px) {
+  /* ==============  contact card ===================== */
+  section.contact {
+    padding: 120px 0px;
+  }
+
+  /* ================ contact card end ====================== */
 }
 
 @media only screen and (max-width: 568px) {
@@ -172,4 +199,44 @@
     body.menu-is-active .menu-trigger {
       display: none;
     } */
+
+  section.directors .button-group button + button {
+    padding-left: 0.1rem;
+    padding-bottom: 0.9rem;
+  }
+
+  section.contact .contact-cols {
+    height: 300px;
+    width: 320px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    margin: 0 auto 15px;
+  }
+
+  .contact-cols.contact-right ul {
+    text-align: left;
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* ==============  contact card ===================== */
+  section.contact {
+    padding: 120px 0px;
+    background-color: var(--nav-overlay-bg);
+  }
+
+  section.contact .contact-cols {
+    height: 300px;
+    width: 360px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    margin: 0 auto 15px;
+  }
+
+  .contact-cols.contact-right ul {
+    text-align: right;
+    left: 10%;
+  }
+  /* ================ contact card end ====================== */
 }
