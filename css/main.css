@@ -148,7 +148,7 @@ header .logo {
 
 .cover-main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/hero.jpg");
+    url("../img/hero320-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -170,7 +170,7 @@ header .logo {
   background-repeat: none;
   color: #fff;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   /* background-attachment: fixed; */
   height: 98vh;
 }
@@ -223,7 +223,7 @@ header .logo {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
 .work-tile > span {
   position: absolute;
@@ -231,7 +231,7 @@ header .logo {
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;

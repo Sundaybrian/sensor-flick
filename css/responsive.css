@@ -1,8 +1,94 @@
 /*  */
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 320px) {
+  .cover-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/hero320-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center;
+  }
+
+  /* ======= About ========= */
+  .about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+      url("../img/about-min.jpg");
+    font-weight: 480;
+    padding-bottom: 40px;
+    height: 100vh;
+    font-size: 15px;
+  }
+
+  .about .about-content {
+    width: 83%;
+  }
+
+  .about .scream {
+    font-size: 55px;
+    opacity: 0.28;
+    bottom: 0;
+    top: 42%;
+    left: 5%;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  /* ======= About end===== */
+
+  /* ========= tabs======== */
+
+  section.tabs-display {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  section.tabs-display .tabs-buttons > .button-group button {
+    font-size: 12.3px;
+  }
+
+  .adverts-tabs {
+    height: 100%;
+    left: 0% !important;
+    width: 100% !important;
+  }
+
+  /* ============  tabs end=============== */
+
+  /* ============= directors ============= */
+
+  section.directors .header-directors {
+    padding-top: 40vh;
+  }
+
+  section.directors .tabs-buttons {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.directors .tabs-buttons > .button-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  section.directors .button-group button + button {
+    padding-left: 0.1rem;
+    padding-bottom: 0.9rem;
+  }
 }
 
-/* -----------------Responsive menu--------------------------- */
+@media only screen and (max-width: 568px) {
+  .cover-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/hero320-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   /* .menu-trigger {
