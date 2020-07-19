@@ -81,7 +81,7 @@ $(document).ready(function () {
     } else if ($selector == ".events-tabs") {
       $(".tabs-display").css({
         background:
-          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/MWG07934.jpg)",
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/MWG07934-min.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
