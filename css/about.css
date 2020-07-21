@@ -1,0 +1,7 @@
+.cover-main {
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 0 !important;
+  background-position: center;
+}
