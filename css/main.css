@@ -497,7 +497,7 @@ section.contact .contact-cols {
   animation: animate 2s 1;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 1px;
   color: var(--brand-color) !important;
 }
