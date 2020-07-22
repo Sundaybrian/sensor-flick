@@ -103,103 +103,43 @@
     </section>
     <!-- =================  end header ========================= -->
 
-    <!-- ===============================showcase ===================================-->
-    <section class="work" id="work">
-      <div class="work-tile" id="music-tile">
-        <img src="img/work-music-videos-min.jpg" class="img-fluid" alt="" />
-        <span>Music Videos</span>
-        <div class="work-overlay"></div>
-      </div>
-
-      <div class="work-tile">
-        <img src="img/work-advertising-min.jpg" class="img-fluid" alt="" />
-        <span>Advertising</span>
-        <div class="work-overlay"></div>
-      </div>
-
-      <div class="work-tile">
-        <img src="img/work-events-min.jpg" class="img-fluid" alt="" />
-        <span>Events</span>
-        <div class="work-overlay"></div>
-      </div>
-    </section>
-
-    <!-- ===============================showcase==================================-->
-
     <!-- ===============================tabss===================================-->
-
-    <section class="tabs-display" id="tabs-display">
+    <section
+      class="tabs-display"
+      id="tabs-display"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(img/advert1.png);
+        backgroundposition: center;
+        backgroundrepeat: no-repeat;
+        backgroundsize: cover;
+        paddingtop: 200px;
+        paddingbottom: 200px;
+      "
+    >
       <div class="container">
         <div class="row tabs-buttons">
           <div class="button-group">
-            <button type="button" data-filter=".music-tabs" class="active">
+            <a href="music-videos.html" style="text-decoration: none;">
               Music Videos
+            </a>
+
+            <a href="events.html" style="text-decoration: none;">
+              Events
+            </a>
+            <button type="button" data-filter=".adverts-tabs" class="active">
+              Adverts
             </button>
-            <button type="button" data-filter=".events-tabs">Events</button>
-            <button type="button" data-filter=".adverts-tabs">Adverts</button>
           </div>
         </div>
 
         <div class="tabs-grid">
-          <div class="row music-tabs">
-            <div class="col-md-4">
-              <img src="img/music-3-nik.JPG" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>
-                  Happy With you Alex Mwangi
-                </h5>
-                <h5>
-                  Nikita Kering
-                </h5>
-                <h5>
-                  Alex Mwangi
-                </h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="img/music2-kijito.JPG" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>Kijito cha Utakaso</h5>
-                <h5>Joyce Ojowi</h5>
-                <h5>Grace Omondi</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="img/music1.JPG" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>Uzima</h5>
-                <h5>Joyce Ojowi</h5>
-                <h5>Grace Omondi</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="row events-tabs">
-            <div class="col-md-4">
-              <img src="img/thumbnail-min.jpg" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>Trace Live-Sauti Sol</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="img/journey 1000-min.jpg" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>Journey to 1000</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="img/1000 bts-min.jpg" class="img-fluid" alt="" />
-              <div class="labels">
-                <h5>Journey to 1000 BTS</h5>
-              </div>
-            </div>
-          </div>
-
           <div class="owl-carousel owl-theme adverts-tabs">
             <img src="img/advert1.png" class="img-fluid" alt="" />
             <img src="img/advert2-min.png" class="img-fluid" alt="" />
           </div>
         </div>
+
         <!-- tab grid -->
       </div>
       <!-- container -->

@@ -1,9 +1,10 @@
 $(document).ready(function () {
   // TODO: CLEAN UP THIS FILE
   //hacky way to filter tabs displayon load
-  $(".tabs-display .tabs-grid").isotope({
-    filter: ".music-tabs",
-  });
+
+  // $(".tabs-display .tabs-grid").isotope({
+  //   filter: ".music-tabs",
+  // });
 
   // sticky header
   var $header = $("header");

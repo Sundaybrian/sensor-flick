@@ -371,7 +371,8 @@ section.tabs-display .tabs-buttons > .button-group {
   justify-content: space-between;
 }
 
-section.tabs-display .tabs-buttons > .button-group button {
+section.tabs-display .tabs-buttons > .button-group button,
+section.tabs-display .tabs-buttons > .button-group a {
   color: #fff;
   background: transparent;
   border: none;
@@ -385,7 +386,8 @@ section.tabs-display .tabs-buttons > .button-group button.active {
   color: var(--brand-color);
 }
 
-section.tabs-display .button-group button + button {
+section.tabs-display .button-group button + button,
+section.tabs-display .button-group a {
   margin-left: 3rem;
 }
 
