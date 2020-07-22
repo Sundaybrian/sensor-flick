@@ -131,11 +131,13 @@ header.sticky {
 /* -------------------- */
 
 header .menu-container {
-  height: 0%;
-  width: 100%;
+  height: 100%;
+  width: 0%;
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  right: 0;
+  left: 100%;
+  bottom: 0;
   z-index: 3;
   background: var(--nav-overlay-bg);
   overflow: hidden;
@@ -191,7 +193,8 @@ body.scroll header.sticky {
 }
 
 body.menu-is-active .menu-container {
-  height: 100%;
+  width: 100%;
+  left: 0;
 }
 
 body.menu-is-active .js-menu-icon {

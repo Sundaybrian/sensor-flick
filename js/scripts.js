@@ -11,7 +11,7 @@ $(document).ready(function () {
 
   $(window).on("scroll", function () {
     var scrollFromTop = $(window).scrollTop();
-    $("body").toggleClass("scroll", scrollFromTop > 350);
+    $("body").toggleClass("scroll", scrollFromTop > 300);
   });
 
   // responsive menu
