@@ -73,7 +73,7 @@
     justify-content: space-evenly;
   }
 
-  section.tabs-display .button-group a + a {
+  section.tabs-display .tabs-buttons > .button-group a + a {
     padding-left: 0.1rem;
     padding-bottom: 0.9rem;
   }
@@ -118,8 +118,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  section.directors .button-group button + button,
-  section.tabs-display .button-group a + a {
+  section.tabs-display .tabs-buttons > .button-group a + a {
     padding-left: 0.1rem;
     padding-bottom: 0.9rem;
   }

@@ -470,8 +470,14 @@ section.directors .grid .our-project > .title h4 {
   font-family: normal 700 24px/12px;
 }
 
+section.directors .grid .our-project > .title span {
+  color: #707070;
+  text-transform: uppercase;
+  font-weight: 450;
+}
+
 section.directors .grid .our-project > div.img:hover {
-  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+  filter: brightness(0.8) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 section.directors .directors-projects .title {
