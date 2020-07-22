@@ -1,6 +1,5 @@
 1 add dp
  
-3 When clicked it should take the user to the respective page eg ads. 
 
 4 On the ad page, there should be a link to go to music videos and events and vice versa for the same. (let me know if I explained to understanding)
 seriously???
