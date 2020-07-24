@@ -111,6 +111,25 @@
   /* ================ contact card end ====================== */
 }
 
+@media only screen and (max-width: 495px) {
+  section.directors .tabs-buttons > .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section.directors .button-group button {
+    background: transparent;
+    border: none;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    font: normal 500 1rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+}
+
 @media only screen and (max-width: 568px) {
   .cover-main {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -143,18 +162,6 @@
 }
 
 @media only screen and (max-width: 990px) {
-  /* ===========   directors================= */
-  /* section.directors .button-group {
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
-  } */
-
-  /* section.directors .button-group::-webkit-scrollbar {
-    display: none;
-  } */
-
   /* ==============  contact card ===================== */
   section.contact {
     padding: 120px 0px;
