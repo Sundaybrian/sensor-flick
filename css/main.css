@@ -462,10 +462,10 @@ section.directors .button-group button {
 section.directors .button-group button.active {
   color: var(--brand-color);
 }
-
+/* 
 section.directors .button-group button + button {
-  /* padding-left: 3rem; */
-}
+  
+} */
 
 section.directors .grid .our-project > .title h4 {
   font-family: normal 700 24px/12px;

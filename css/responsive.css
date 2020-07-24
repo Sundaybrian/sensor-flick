@@ -105,16 +105,6 @@
 @media only screen and (min-width: 360px) {
   /* ==============  contact card ===================== */
 
-  section.directors .button-group button {
-    background: transparent;
-    border: none;
-    padding: 8px;
-    /* margin-bottom: 20px; */
-    font: normal 500 1rem;
-    text-transform: capitalize;
-    color: #fff;
-  }
-
   section.contact {
     padding: 120px 0px;
   }
@@ -122,18 +112,29 @@
   /* ================ contact card end ====================== */
 }
 
-@media only screen and (max-width: 495px) {
+/* @media only screen and (max-width: 411px) and (min-width: 335px) {
+  section.directors .button-group button {
+    background: red;
+    border: none;
+    padding: 0px 200px;
+    margin: 20px 0px;
+    font: normal 500 1rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+} */
+
+@media only screen and (max-width: 492px) {
   section.directors .tabs-buttons > .button-group {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   section.directors .button-group button {
     background: transparent;
     border: none;
-    padding: 12px;
-    /* margin-bottom: 20px; */
+    padding: 0px 10px;
+    margin: 20px 0px;
     font: normal 500 1rem;
     text-transform: capitalize;
     color: #fff;
