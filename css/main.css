@@ -453,6 +453,7 @@ section.directors .tabs-buttons > .button-group {
 section.directors .button-group button {
   background: transparent;
   border: none;
+  padding: 0px 20px;
   font: normal 500 1rem;
   text-transform: capitalize;
   color: #fff;
@@ -463,7 +464,7 @@ section.directors .button-group button.active {
 }
 
 section.directors .button-group button + button {
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
 }
 
 section.directors .grid .our-project > .title h4 {

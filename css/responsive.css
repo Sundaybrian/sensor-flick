@@ -46,6 +46,11 @@
     font-size: 12.3px;
   }
 
+  section.tabs-display .tabs-buttons > .button-group a + a {
+    padding-left: 0.1rem;
+    padding-bottom: 0.9rem;
+  }
+
   .adverts-tabs {
     height: 100%;
     left: 0% !important;
@@ -73,7 +78,7 @@
     justify-content: space-evenly;
   }
 
-  section.tabs-display .tabs-buttons > .button-group a + a {
+  section.directors .tabs-buttons > .button-group button + button {
     padding-left: 0.1rem;
     padding-bottom: 0.9rem;
   }
@@ -138,6 +143,18 @@
 }
 
 @media only screen and (max-width: 990px) {
+  /* ===========   directors================= */
+  /* section.directors .button-group {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  } */
+
+  /* section.directors .button-group::-webkit-scrollbar {
+    display: none;
+  } */
+
   /* ==============  contact card ===================== */
   section.contact {
     padding: 120px 0px;
