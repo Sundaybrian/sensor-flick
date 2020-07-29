@@ -124,8 +124,8 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     nav: false,
     center: true,
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     dots: true,
     responsiveClass: true,
     responsive: {
