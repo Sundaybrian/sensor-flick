@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 492px) {
   section.tabs-display .tabs-grid .labels {
-    padding-top: 8px;
+    padding-top: 5px;
   }
   section.directors .tabs-buttons > .button-group {
     display: flex;
